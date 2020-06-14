@@ -11,7 +11,6 @@ import java.io.Serializable;
  *
  * @author cuongnm
  */
-
 public class Bus implements Serializable{
     private String bcode;
     private String bus_name;
@@ -84,8 +83,10 @@ public class Bus implements Serializable{
     public String toString() {
         double  travel_time = this.arrival_time - this.depart_time;
         return this.bcode + " | " + this.bus_name + " | " + this.seat + " | " + this.booked
-                + " | " + this.depart_time + " | " + this.arrival_time + " | " + travel_time;
+                + " | " + this.depart_time + " | " + this.arrival_time;
     }
     
     
 }
+
+
